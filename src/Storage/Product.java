@@ -7,6 +7,7 @@ public class Product {
     private String manufacturer;
     private Units unit;
     private int quantity;
+    private String location;
     private String comment;
 
     public Product(String name, String expiryDate, String dateOfReceipt, String manufacturer, Units unit, int quantity, String comment) {
@@ -65,6 +66,14 @@ public class Product {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getComment() {
